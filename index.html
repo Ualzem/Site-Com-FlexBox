@@ -1,0 +1,315 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <!--RESPONSIVIDADE-->
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+
+    <!--fontes da net: -->
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--javascript para o menu mobile: -->
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menu-mobile").addEventListener("click", function() {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
+    <title>Medicenter</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <!--div da logo-->
+                <a href=""><img src="assets/images/logo.png" /></a>
+            </div>
+
+
+            <div class="menu">
+                <!--div do menu-->
+                <nav>
+
+                    <!-- menu para celular:-->
+                    <div class="menu-mobile">
+                        <div class="menu-mobile-line"></div>
+                        <div class="menu-mobile-line"></div>
+                        <div class="menu-mobile-line"></div>
+                    </div>
+
+                    <!--menu de navegação computador-->
+
+                    <ul>
+                        <li class="active"><a href="">HOME</a></li>
+                        <li><a href="contatos.html" target="_blank">SOBRE NÓS</a></li>
+                        <li><a href="contatos.html" target="_blank">CONTATO</a></li>
+
+
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="baner">
+        <div class="container column">
+
+            <div class="baner_headline">
+                <h1>Qualidade e Experiência</h1>
+                <h2>Medicenter é um site perfeito para qualquer tela.</h2>
+            </div>
+
+            <div class="baner_options">
+
+                <div class="mini-baner1">
+                    <div class="baner-title">Casos de Emergência</div>
+                    <div class="baner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</div>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div class="mini-baner2">
+                    <div class="baner-title">Horários Médicos</div>
+                    <div class="baner-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    </div>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div class="mini-baner3">
+                    <div class="baner-title">Expediente Clínica</div>
+
+                    <div class="baner-hora-total">
+                        <div class="baner-hora">
+                            <div class="baner-hora-dia1">Segunda - Quinta</div>
+                            <div class="baner-hora-dia2">Sexta-Feira</div>
+                            <div class="baner-hora-dia3">Sábado</div>
+                        </div>
+                        <div class="baner-hora2">
+                            <div class="baner-hora-dia1">07:00 - 19:00</div>
+                            <div class="baner-hora-dia2">07:00 - 16:00</div>
+                            <div class="baner-hora-dia3">07:00 - 12:00</div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">Últimas Notícias</div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body-flex">
+
+                        <!-- INICIO NOTICIAS -->
+                        <article>
+                            <a href="">
+                                <div class="data-news">
+                                    <div class="data-news-posted">01 MAI 21</div>
+                                    <div class="news-coments">2</div>
+                                </div>
+                                <div class="news-thumb">
+                                    <img src="assets/images/noticias.jpg" />
+                                </div>
+                                <div class="news-title"> Loren Ipsun Delum Antyn</div>
+                                <div class="news-resume">
+                                    A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="data-news">
+                                    <div class="data-news-posted">01 MAI 21</div>
+                                    <div class="news-coments">2</div>
+                                </div>
+                                <div class="news-thumb">
+                                    <img src="assets/images/noticias.jpg" />
+                                </div>
+                                <div class="news-title"> Loren Ipsun Delum Antyn</div>
+                                <div class="news-resume">
+                                    A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="data-news">
+                                    <div class="data-news-posted">01 MAI 21</div>
+                                    <div class="news-coments">2</div>
+                                </div>
+                                <div class="news-thumb">
+                                    <img src="assets/images/noticias.jpg" />
+                                </div>
+                                <div class="news-title"> Loren Ipsun Delum Antyn</div>
+                                <div class="news-resume">
+                                    A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="data-news">
+                                    <div class="data-news-posted">01 MAI 21</div>
+                                    <div class="news-coments">2</div>
+                                </div>
+                                <div class="news-thumb">
+                                    <img src="assets/images/noticias.jpg" />
+                                </div>
+                                <div class="news-title"> Loren Ipsun Delum Antyn</div>
+                                <div class="news-resume">
+                                    A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- FIM NOTICIAS-->
+
+
+
+                    </div>
+            </section>
+
+            <asside>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">Departamentos</div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body">
+                        <div class="departamentos">
+                            <div class="departamento1">
+                                <img class="image-computer1" src="assets/images/ambulatorio.png" title="Ambulatório" />
+                            </div>
+                            <div class="departamento2">
+                                <img class="image-computer2" src="assets/images/cardiologia.png" title="Cardiologia" />
+                            </div>
+                            <div class="departamento1">
+                                <img class="image-computer3" src="assets/images/clinico.png" title="Clínicas" />
+                            </div>
+                            <div class="departamento2">
+                                <img class="image-computer4" src="assets/images/dentistas.png" title="Dentistas" />
+                            </div>
+                            <div class="departamento1">
+                                <img class="image-computer5" src="assets/images/exames.png" title="Laboratórios" />
+                            </div>
+                            <div class="departamento2">
+                                <img class="image-computer6" src="assets/images/genetica.png" title="Genética" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Marcações</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</div>
+
+                    </div>
+            </asside>
+            </div>
+    </section>
+
+
+    <!-- INICIO DO RODAPÉ:-->
+
+    <footer>
+        <div class="container flex-column">
+            <!--esse container tem 2 classes-->
+            <div class="footer-menu">
+                <div class="footer-menu1">
+                    <a href="contatos.html">
+                        <div class="baner-title">Planos de Saúde</div>
+                        <div class="baner-text">Ut enim ad minima, quis nostrum exercitationem ullam.
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-menu2">
+                    <a href="">
+                        <div class="baner-title">Registros Médicos</div>
+                        <div class="baner-text">Ut enim ad minima, quis nostrum exercitationem ullam.
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-menu3">
+                    <a href="">
+                        <div class="baner-title">Previdência Privada</div>
+                        <div class="baner-text">Ut enim ad minima, quis nostrum exercitationem ullam.
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-area">
+                <div class="footer-area-item">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Clínica Medicenter</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</div>
+
+                    </div>
+                </div>
+                <div class="footer-area-item">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Últimas Notícias</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</div>
+
+                    </div>
+                </div>
+                <div class="footer-area-item">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Matérias Instagran</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">A dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-direitos">
+                Ualzem Campos - Copyright 2021 - Todos os Direitos Reservados.
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

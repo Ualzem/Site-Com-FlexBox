@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /*ITENS LADO A LADO NAS PONTAS E A MEDIDA Q AUMENTAM VÃO EM DIREÇÃO AO CENTRO*/
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    /*tira os pontinhos da lista*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    /*tira o sublinhado do link*/
+    text-transform: uppercase;
+    /*tudo maiusculo*/
+    color: #727272;
+    font-family: Montserrat;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #3ad7d7;
+    /*fundo do menu fica azul ao passar o mouse*/
+    color: #FFF;
+    /*o texto fica branco ao passar o mouse*/
+}
+
+#baner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/baner.jpg');
+    /*outro jeito de colocar imagens*/
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    /*altura falsa - tenho q colocar esse item senão não aparece nada pq a section no html esta vazia*/
+}
+
+.column {
+    flex-direction: column;
+    /*classe do container column - UM ABAIXO DO OUTRO*/
+}
+
+.baner_headline {
+    flex: 1;
+    /*tamanho adaptavel para usar o responsivo*/
+    display: flex;
+    /*DISTRIBUIDO POR IGUAL*/
+    flex-direction: column;
+    /*1 abaixo do outro*/
+    justify-content: center;
+}
+
+.baner_headline h1 {
+    max-width: 380px;
+    color: #FFF;
+    font-size: 60px;
+    font-family: montserrat;
+    text-shadow: 2px 2px 5px #000;
+    margin: 0;
+    padding: 0;
+}
+
+.baner_headline h2 {
+    max-width: 330px;
+    color: #FFF;
+    font-size: 22px;
+    font-family: montserrat;
+    text-shadow: 2px 2px 5px #000;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.baner_options {
+    height: 210px;
+    /*tamanho fixo*/
+    display: flex;
+}
+
+.baner_options a {
+    display: inline-block;
+    /*acompanha o tamanho do texto*/
+    border: 2px solid #FFF;
+    padding: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #FFF;
+}
+
+.mini-baner1,
+.mini-baner2,
+.mini-baner3 {
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.mini-baner1 {
+    background-color: #39aae1;
+}
+
+.mini-baner2 {
+    background-color: #0079c7;
+}
+
+.mini-baner3 {
+    background-color: #2b4c99;
+}
+
+.baner-title {
+    font-family: Montserrat;
+    font-size: 19px;
+}
+
+.baner-text {
+    font-family: Montserrat;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.baner-hora-total {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+}
+
+.baner-hora {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.baner-hora2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.baner-hora-dia1,
+.baner-hora-dia2,
+.baner-hora-dia3 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+/*section 2 - geral: */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+    /* vai ocupar 2 espaçõs*/
+}
+
+#geral asside {
+    flex: 1;
+    /* vai ocupar 1 espaço*/
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    font-family: Montserrat;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.widget-title-bar {
+    width: 60px;
+    height: 3px;
+    background-color: #3ad7d7;
+    margin-top: 7px;
+}
+
+.widget-body-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget-body {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+}
+
+.departamentos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.departamento1 {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.departamento2 {
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* css dos articles: */
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .data-news {
+    display: flex;
+}
+
+article .data-news-posted {
+    background-color: #2b4c99;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-coments {
+    background-color: #3ad7d7;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news-thumb {
+    margin-top: 30px;
+}
+
+article .news-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+article .news-resume {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(44, 43, 43);
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+
+/*inicio do css do footer: */
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu a {
+    display: block;
+    /*pro link ser toda a area do retangulo*/
+    text-decoration: none;
+    padding: 20px;
+    color: #FFF;
+}
+
+.footer-menu1,
+.footer-menu2,
+.footer-menu3 {
+    flex: 1;
+    color: #FFF;
+}
+
+.footer-menu1 {
+    background-color: #39aae1;
+}
+
+.footer-menu2 {
+    background-color: #0079c7;
+}
+
+.footer-menu3 {
+    background-color: #2b4c99;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-area-item {
+    flex: 1;
+    color: #FFF;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+footer .widget-title-text {
+    color: rgb(151, 148, 148);
+}
+
+footer .widget-body {
+    font-size: 13px;
+    padding-right: 26px;
+}
+
+.footer-direitos {
+    font-family: Montserrat;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(241, 240, 237);
+    margin-top: 55px;
+}
+
+.menu-mobile {
+    /* MENU MOBILE, SÓ VAI APARECER NO CELULAR*/
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.menu-mobile-line {
+    height: 3px;
+    background-color: #3ad7d7;
+}
+
+
+/*CSS PARA ARRUMAR A RESPONSIVIDADE: */
+
+@media (max-width: 350px) {
+    .baner_headline {
+        padding: 5px;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    #geral .container {
+        margin-top: 90px;
+    }
+    article {
+        margin-right: 10px;
+    }
+}
+
+
+/* AJUSTES PARA CELULAR GRANDE: */
+
+@media (max-width: 600px) {
+    #baner {
+        height: 370px;
+    }
+    .baner_headline {
+        padding: 20px;
+    }
+    .baner_headline h1 {
+        font-size: 50px;
+    }
+    .baner_headline h2 {
+        font-size: 17px;
+    }
+    .baner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    #geral asside {
+        padding: 20px;
+    }
+    #geral .container {
+        padding-top: 390px;
+    }
+    .mini-baner3 {
+        padding-bottom: 0px;
+    }
+    asside .departamento1 {
+        margin-right: 10px;
+    }
+    asside .departamento2 {
+        margin-left: 0px;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-direitos {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+        /* muda so o container do menu*/
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+/* CSS RESPONSIVO PARA TABLET: */
+
+@media (min-width: 602px) and (max-width: 950px) {
+    .baner_headline {
+        padding: 20px;
+    }
+    .baner_options {
+        height: auto;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    #geral asside {
+        padding: 20px;
+    }
+    .departamento1 {
+        width: 170px;
+        height: 170px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+    .departamento2 {
+        width: 170px;
+        height: 170px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    header .container {
+        flex-direction: row;
+        /* muda so o container do menu*/
+    }
+    .footer-area {
+        padding: 20px;
+    }
+    .footer-direitos {
+        padding-left: 20px;
+    }
+}
