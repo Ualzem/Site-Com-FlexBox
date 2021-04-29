@@ -26,6 +26,10 @@ Site responsivo criado a partir das aulas de HTML e CSS do professor **Bonieky L
 - JAVASCRIPT (menu moblie)
 
 
+# Editor de Imagens
+- Photoshop
+
+
 # Autor
 ## Ualzem Campos
 https://www.linkedin.com/in/ualzem-campos/
